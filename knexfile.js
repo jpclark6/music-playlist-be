@@ -2,7 +2,7 @@
 
 module.exports = {
   development: {
-    client: "postgresql",
+    client: "pg",
     connection: {
       database: "music_playlist_be_development"
     },
@@ -16,7 +16,7 @@ module.exports = {
   },
 
   production: {
-    client: "postgresql",
+    client: "pg",
     connection: process.env.DATABASE_URL + `?ssl=true`,
     pool: {
       min: 2,
