@@ -4,6 +4,9 @@ const express = require("express");
 
 //Initialize express
 const app = express();
+const bodyParser = require('body-parser');
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 const environment = process.env.NODE_ENV || 'development'; 
 
