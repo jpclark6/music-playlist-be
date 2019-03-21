@@ -5,7 +5,7 @@ const express = require("express");
 //Initialize express
 const app = express();
 
-const environment = process.env.NODE_ENV || 'development';
+const environment = process.env.NODE_ENV || 'development'; 
 
 //Init Middleware
 // app.use(logger)
