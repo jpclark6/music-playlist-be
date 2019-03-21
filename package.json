@@ -1,0 +1,26 @@
+{
+  "name": "music-playlist-be",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_PATH=. NODE_ENV=development node index.js",
+    "start-production": "NODE_PATH=. NODE_ENV=production node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpclark6/music-playlist-be.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jpclark6/music-playlist-be/issues"
+  },
+  "homepage": "https://github.com/jpclark6/music-playlist-be#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "knex": "^0.16.3",
+    "pg": "^7.9.0"
+  }
+}
