@@ -27,3 +27,7 @@ app.use("/api/v1/favorites/:id", require("./routes/api/v1/individual"));
 const PORT = process.env.PORT || 5000;
 //Runs the webserver
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
+
+module.exports = {
+  app: app
+}
