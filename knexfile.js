@@ -4,7 +4,7 @@ module.exports = {
   development: {
     client: "postgresql",
     connection: {
-      database: "music-playlist-be-development"
+      database: "music_playlist_be_development"
     },
     pool: {
       min: 2,
