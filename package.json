@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "NODE_PATH=. NODE_ENV=development node index.js",
+    "dev": "nodemon index",
     "start-production": "NODE_PATH=. NODE_ENV=production node index.js",
     "console": "NODE_PATH=. NODE_ENV=development node -i"
   },
@@ -28,6 +29,7 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "chai-http": "^4.2.1",
-    "mocha": "^6.0.2"
+    "mocha": "^6.0.2",
+    "nodemon": "^1.18.10"
   }
 }
