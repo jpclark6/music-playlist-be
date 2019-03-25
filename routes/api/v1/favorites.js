@@ -5,6 +5,7 @@ const router = express.Router();
 const getAllFavorites = require("../../../queries/favorites/getAll");
 const postIndividual = require("../../../queries/favorites/postIndividual");
 const edit = require("../../../queries/favorites/edit");
+const deleteSong = require("../../../queries/favorites/delete");
 // const getAllFavorites = require("queries/favorites/getAll");
 // Get All Favorites
 router.get("/", (req, res) => getAllFavorites().then(rows => res.json(rows)));
@@ -32,6 +33,13 @@ router.put("/:id", (req, res) => {
       res.status(400);
       return res.json({ message: "invalid request" });
     });
+});
+
+router.delete("/:id", (req, res) => {
+  deleteSong(req.params.id).then(reply =>{
+    res.status(204)
+    return res.json({ message: "record deleted" });
+  })
 });
 
 module.exports = router;
