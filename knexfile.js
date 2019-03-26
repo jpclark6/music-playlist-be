@@ -14,15 +14,15 @@ module.exports = {
       tableName: "knex_migrations"
     },
     seeds: {
-      directory: './seed'
+      directory: "./seed"
     },
-  useNullAsDefault: true
+    useNullAsDefault: true
   },
 
-  test : {
+  test: {
     client: "pg",
     connection: {
-      database: "music_playlist_be_development"
+      database: "music_playlist_be_test"
     },
     pool: {
       min: 2,
@@ -32,7 +32,7 @@ module.exports = {
       tableName: "knex_migrations"
     },
     seeds: {
-      directory: './migrations'
+      directory: "./seed"
     }
   },
 

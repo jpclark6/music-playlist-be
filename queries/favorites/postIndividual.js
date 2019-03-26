@@ -1,7 +1,6 @@
 const connection = require("../connection");
 
-function postIndividual(songInfo) {
-
+function postIndividual(attributes) {
   // for (let requiredParameter of ['favorites']) {
   //   if (!songInfo[requiredParameter]) {
   //     return response
@@ -9,9 +8,7 @@ function postIndividual(songInfo) {
   //       .send({ error: `Expected format: {favorites: {name: <name>, artist_name: <artist_name>, genre: <genre>, rating: <rating>} }. You're missing a "${requiredParameter}" property.` });
   //   }
   // }
-  let song = songInfo.favorites;
-  return connection('favorites').insert(song, 'name')
+  return connection("favorites").insert(attributes);
 }
-
 
 module.exports = postIndividual;
