@@ -36,6 +36,7 @@ app.use(function(request, response, next) {
 });
 app.use("/api/v1/favorites", require("./routes/api/v1/favorites"));
 app.use("/api/v1/favorites/:id", require("./routes/api/v1/individual"));
+app.use("/api/v1/playlists", require("./routes/api/v1/playlists"));
 //When deployed the port number will be in an environment variable if not we set it to 5000.
 const PORT = process.env.PORT || 5000;
 //Runs the webserver
