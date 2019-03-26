@@ -4,7 +4,7 @@ const express = require("express");
 
 //Initialize express
 const app = express();
-consts cors = require('cors')
+const cors = require('cors')
 const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
