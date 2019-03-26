@@ -8,7 +8,7 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-const environment = process.env.NODE_ENV || 'development'; 
+const environment = process.env.NODE_ENV || 'development';
 
 //Init Middleware
 // app.use(logger)
@@ -20,7 +20,7 @@ const environment = process.env.NODE_ENV || 'development';
 
 // Set static folder
 // app.use(express.static(path.join(__dirname, "public")));
-
+app.use(cors())
 app.use("/api/v1/favorites", require("./routes/api/v1/favorites"));
 app.use("/api/v1/favorites/:id", require("./routes/api/v1/individual"));
 //When deployed the port number will be in an environment variable if not we set it to 5000.
