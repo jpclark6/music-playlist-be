@@ -21,7 +21,7 @@ router.get("/", (req, res) => getAllFavorites().then(rows => res.json(rows)));
 router.post("/", (req, res) => {
   return postIndividual(getBodyParams(req)).then(reply => res.json(reply));
 });
-router.put("/:id", (req, res) => {
+router.patch("/:id", (req, res) => {
   // checkout eslint
   return edit(req.params.id, getBodyParams(req))
     .then(reply => {
