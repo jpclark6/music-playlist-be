@@ -2,7 +2,7 @@
 ---
 # Introduction
 ---
-Back-End for Play Play, a song playlist creator app.
+Play Play is a hosted music playlist creator API to serve the front end found [here](https://github.com/JSmith23/music_playlist_fe). It feature an artist search to find songs through the [Musicmatch API](https://developer.musixmatch.com/), a PostgreSQL database to store song info and playlist info, and RESTful routing.
 
 # Setup
 ---
